@@ -1,7 +1,7 @@
-document.getElementsByClassName("save-note").addEventListener("click", function(event) {
+document.querySelector(".save-note").addEventListener("click", function(event) {
     event.preventDefault(); // prevent the default form submit behavior
-    const noteTitle = document.getElementsByClassName("note-title").value;
-    const noteText = document.getElementsByClassName("note-textarea").value;
+    const noteTitle = document.querySelector(".note-title").value;
+    const noteText = document.querySelector(".note-textarea").value;
     const newNote = { title: noteTitle, text: noteText };
     fetch("/api/notes", {
       method: "POST",
@@ -16,3 +16,4 @@ document.getElementsByClassName("save-note").addEventListener("click", function(
     })
     .catch(error => console.error(error));
   });
+  

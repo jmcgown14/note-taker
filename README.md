@@ -32,8 +32,8 @@ THEN you are presented with empty fields to enter a new note title and the noteâ
 
 ## Links
 
-The following is a link to the github repository as well as video used to demonstrate the applicaiton.
-
+The following is a link to the project
+[Project Link](https://guarded-reef-76897.herokuapp.com/)
 
 ## Collaborators
 I worked in collaboration with Katherine Renier.
