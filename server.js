@@ -23,13 +23,14 @@ app.post("/api/notes", (req, res) => {
   const newNote = req.body;
   newNote.id = Date.now().toString(); // add a unique ID to the new note
   noteData.push(newNote);
+
   fs.writeFile("./db/db.json", JSON.stringify(noteData), (err) => {
     if (err) throw err;
     res.json(newNote);
-
     console.log("New note added:", newNote);
   });
 });
+
 
 app.listen(PORT, () => {
   console.log(`The server is listening on PORT: ${PORT}`);
